@@ -1,9 +1,6 @@
-public class Heroi {
-  int id;
-  String nome;
-  String localizacao;
-  String identidade;
-  double preco;
+public class Heroi extends Pessoa{
+  public int id;
+  public String identidade;
   ArrayList<Franquia> franquias = new ArrayList<>();
   Franquia ligaDaJustica = new Franquia(1, "Liga da Justiça", "Liga", "19/06/2015");
   franquias.add(ligaDaJustica);
@@ -17,10 +14,10 @@ public class Heroi {
   franquias.add(ligaDaJustica3);
 public Heroi(int id, String nome, String localizacao, String identidade double preco, Franquia franquias) {
   this.id = id;
-  this.nome = nome;
-  this.localizacao = localizacao;
+  super.nome = nome;
+  super.localizacao = localizacao;
   this.identidade = identidade;
-  this.preco = preco;
+  super.precoCache = precoCache;
   this.franquias = franquias;
   }
   public void valorInvestimentos () {

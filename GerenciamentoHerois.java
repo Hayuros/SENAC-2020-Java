@@ -22,7 +22,7 @@ public class GerenciamentoHeroi {
     herois.add(batman);
     Heroi homenMiraculoso = new Heroi (10, "Homen Miraculoso", "Estados Unidos da América", "Fred Carson", 9162.298);
     herois.add(homenMiraculoso);
-    for(int i=0; i<11; i++) {
+    for(int i=0; i <11; i++) {
       System.out.println(herois);
     }
   }
